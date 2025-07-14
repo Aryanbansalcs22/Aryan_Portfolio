@@ -84,38 +84,33 @@ const Experience = () => {
                   <div
                     className="md:ml-16 rounded-2xl p-8 border transition-all duration-300 hover:-translate-y-1"
                     style={{
-                      background: 'linear-gradient(to right, white 50%, #b87b71 50%)',
-                      boxShadow: '0 4px 20px rgba(184, 123, 113, 0.3)',
+                      boxShadow: '0 4px 20px rgba(184, 123, 113, 0.1)',
                     }}
                   >
                     <div className="grid md:grid-cols-2 gap-6">
                       {/* Left Side */}
-                      <div className="space-y-4">
-                        <div>
-                          <h3 className="text-2xl font-bold mb-2" style={{ color: '#b87b71' }}>
-                            {exp.company}
-                          </h3>
-                          <div className="flex items-center gap-2 text-muted-foreground mb-3">
-                            <MapPin className="w-4 h-4" />
-                            <span>{exp.location}</span>
-                          </div>
-                          <div className="flex items-center gap-2 text-muted-foreground">
-                            <Calendar className="w-4 h-4" />
-                            <span>{exp.duration}</span>
-                          </div>
+                      <div>
+                        <h3 className="text-2xl font-bold mb-2" style={{ color: '#b87b71' }}>
+                          {exp.company}
+                        </h3>
+                        <div className="flex items-center gap-2 text-muted-foreground mb-3">
+                          <MapPin className="w-4 h-4" />
+                          <span>{exp.location}</span>
+                        </div>
+                        <div className="flex items-center gap-2 text-muted-foreground">
+                          <Calendar className="w-4 h-4" />
+                          <span>{exp.duration}</span>
                         </div>
                       </div>
 
                       {/* Right Side */}
-                      <div className="space-y-4">
-                        <div>
-                          <h4 className="text-xl font-semibold text-foreground mb-3">
-                            {exp.position}
-                          </h4>
-                          <p className="text-muted-foreground leading-relaxed">
-                            {exp.description}
-                          </p>
-                        </div>
+                      <div className="bg-[#b87b71] text-white rounded-xl p-4">
+                        <h4 className="text-xl font-semibold mb-3">
+                          {exp.position}
+                        </h4>
+                        <p className="leading-relaxed">
+                          {exp.description}
+                        </p>
                       </div>
                     </div>
                   </div>
